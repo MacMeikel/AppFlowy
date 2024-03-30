@@ -555,14 +555,14 @@
       "typeAValue": "Einen Wert eingeben...",
       "layout": "Layout",
       "databaseLayout": "Layout",
-      "viewList": "Datenbank-Ansichten",
       "editView": "Ansicht editieren",
       "boardSettings": "Board-Einstellungen",
       "calendarSettings": "Kalender-Einstellungen",
       "createView": "Neue Ansicht",
       "duplicateView": "Ansicht duplizieren",
       "deleteView": "Ansicht löschen",
-      "numberOfVisibleFields": "{} angezeigt"
+      "numberOfVisibleFields": "{} angezeigt",
+      "viewList": "Datenbank-Ansichten"
     },
     "textFilter": {
       "contains": "Enthält",
@@ -736,8 +736,8 @@
       "deleteTag": "Tag löschen",
       "colorPanelTitle": "Farbe",
       "panelTitle": "Eine Option auswählen oder erstellen",
-      "searchOption": "Nach einer Option suchen",
-      "searchOrCreateOption": "Eine Option suchen oder erstellen...",
+      "searchOption": "Eine Option suchen oder erstellen",
+      "searchOrCreateOption": "Nach einer Option suchen...",
       "createNew": "Neu erstellen",
       "orSelectOne": "Oder eine Option auswählen",
       "typeANewOption": "Tippe eine neue Option",
@@ -745,34 +745,38 @@
     },
     "checklist": {
       "taskHint": "Aufgbenbeschreibbung",
-      "addNew": "Fügen Sie einen Artikel hinzu",
+      "addNew": "Füge eine Aufgabe hinzu",
       "submitNewTask": "Erstellen",
       "hideComplete": "Blende abgeschlossene Aufgaben aus",
       "showComplete": "Zeige alle Aufgaben"
     },
     "url": {
       "launch": "Im Browser öffnen",
-      "copy": "Webadresse kopieren"
+      "copy": "Webadresse kopieren",
+      "textFieldHint": "Gebe URL ein",
+      "copiedNotification": "In die Zwischenablage kopiert"
     },
     "relation": {
       "relatedDatabasePlaceLabel": "Verwandte Datenbank",
       "relatedDatabasePlaceholder": "Nichts",
-      "inRelatedDatabase": "in",
-      "emptySearchResult": "Nichts gefunden"
+      "inRelatedDatabase": "In",
+      "rowSearchTextFieldPlaceholder": "Suche",
+      "noDatabaseSelected": "Keine Datenbank ausgewählt, bitte wähle zuerst eine aus der folgenden Liste aus:",
+      "emptySearchResult": "Keine Daten gefunden"
     },
-    "menuName": "Raster",
+    "menuName": "Tabelle",
     "referencedGridPrefix": "Sicht von",
-    "calculate": "berechnet",
+    "calculate": "Berechnet",
     "calculationTypeLabel": {
-      "none": "nichts",
+      "none": "Nichts",
       "average": "Durchschnitt",
       "max": "Max",
       "median": "Mittelwert",
       "min": "Min",
-      "sum": "Ergebnis",
+      "sum": "Summe",
       "count": "Zahl",
       "countEmpty": "Zahl leer",
-      "countEmptyShort": "leer",
+      "countEmptyShort": "LEER",
       "countNonEmpty": "Zahl nicht leer",
       "countNonEmptyShort": "nicht leer"
     }
@@ -789,24 +793,24 @@
         "createANewBoard": "Ein neues Board erstellen"
       },
       "grid": {
-        "selectAGridToLinkTo": "Ein Raster zum Verknüpfen auswählen",
-        "createANewGrid": "Ein neues Raster erstellen"
+        "selectAGridToLinkTo": "Eine Tabelle zum Verknüpfen auswählen",
+        "createANewGrid": "Eine neue Tabelle erstellen"
       },
       "calendar": {
         "selectACalendarToLinkTo": "Einen Kalender zum Verknüpfen auswählen",
         "createANewCalendar": "Einen neuen Kalender erstellen"
       },
       "document": {
-        "selectADocumentToLinkTo": "Ein Raster zum Verknüpfen auswählen"
+        "selectADocumentToLinkTo": "Ein Dokument zum Verknüpfen auswählen"
       }
     },
     "selectionMenu": {
       "outline": "Gliederung",
-      "codeBlock": "Code Block"
+      "codeBlock": "Code-Block"
     },
     "plugins": {
       "referencedBoard": "Referenziertes Board",
-      "referencedGrid": "Referenziertes Raster",
+      "referencedGrid": "Referenzierte Tabelle",
       "referencedCalendar": "Referenzierter Kalender",
       "referencedDocument": "Referenziertes Dokument",
       "autoGeneratorMenuItemName": "OpenAI-Autor",
