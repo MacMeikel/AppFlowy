@@ -596,7 +596,7 @@
       "is": "Ist",
       "isNot": "Ist nicht",
       "contains": "Enthält",
-      "doesNotContain": "Beinhaltet nicht",
+      "doesNotContain": "Enthält nicht",
       "isEmpty": "Ist leer",
       "isNotEmpty": "Ist nicht leer"
     },
@@ -613,16 +613,16 @@
         "before": "Vorher",
         "after": "Danach",
         "onOrBefore": "Am oder davor",
-        "onOrAfter": "Während oder danach",
-        "isEmpty": "leer",
-        "isNotEmpty": "nicht leer"
+        "onOrAfter": "Am oder danach",
+        "isEmpty": "Ist leer",
+        "isNotEmpty": "Ist nicht leer"
       }
     },
     "numberFilter": {
-      "equal": "gleich",
-      "notEqual": "ungleich",
-      "lessThan": "weniger als",
-      "greaterThan": "größer als",
+      "equal": "Gleich",
+      "notEqual": "Ungleich",
+      "lessThan": "Ist weniger als",
+      "greaterThan": "Ist größer als",
       "lessThanOrEqualTo": "weniger als oder gleich wie",
       "greaterThanOrEqualTo": "größer als oder gleich wie",
       "isEmpty": "leer",
