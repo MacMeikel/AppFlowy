@@ -559,9 +559,9 @@
       "editView": "Ansicht editieren",
       "boardSettings": "Board-Einstellungen",
       "calendarSettings": "Kalender-Einstellungen",
-      "createView": "New Ansicht",
+      "createView": "Neue Ansicht",
       "duplicateView": "Ansicht duplizieren",
-      "deleteView": "Anslicht löschen",
+      "deleteView": "Ansicht löschen",
       "numberOfVisibleFields": "{} angezeigt"
     },
     "textFilter": {
@@ -582,14 +582,14 @@
       }
     },
     "checkboxFilter": {
-      "isChecked": "Geprüft",
-      "isUnchecked": "Ungeprüft",
+      "isChecked": "Ausgewählt",
+      "isUnchecked": "Nicht ausgewählt",
       "choicechipPrefix": {
-        "is": "Ist"
+        "is": "ist"
       }
     },
     "checklistFilter": {
-      "isComplete": "ist komplett",
+      "isComplete": "ist vollständig",
       "isIncomplted": "ist unvollständig"
     },
     "selectOptionFilter": {
