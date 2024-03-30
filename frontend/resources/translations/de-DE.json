@@ -716,11 +716,11 @@
       "count": "Zählen",
       "newRow": "Neue Zeile",
       "action": "Aktion",
-      "add": "Klicken, um unten hinzuzufügen",
+      "add": "Klicken, um danach hinzuzufügen",
       "drag": "Ziehen, um zu verschieben",
-      "dragAndClick": "Ziehen, um zu verschieben. Klicke, um das Menü zu öffnen",
-      "insertRecordAbove": "Füge Datensatz oben ein",
-      "insertRecordBelow": "Füge Datensatz unten ein"
+      "dragAndClick": "Ziehen, um zu verschieben. Klicken, um das Menü zu öffnen",
+      "insertRecordAbove": "Füge Datensatz davor ein",
+      "insertRecordBelow": "Füge Datensatz danach ein"
     },
     "selectOption": {
       "create": "Erstellen",
