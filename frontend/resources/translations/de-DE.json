@@ -11,11 +11,11 @@
   "and": "und",
   "failedToOpenUrl": "URL konnte nicht geöffnet werden: {}",
   "blockActions": {
-    "addBelowTooltip": "Klicken, um etwas darunter hinzuzufügen",
+    "addBelowTooltip": "Klicken, um etwas davor hinzuzufügen",
     "addAboveCmd": "Alt+Klick",
     "addAboveMacCmd": "Option+Klick",
-    "addAboveTooltip": "oben hinzufügen",
-    "dragTooltip": "Drag to Drop",
+    "addAboveTooltip": "davor hinzufügen",
+    "dragTooltip": "Ziehen, um zu verschieben",
     "openMenuTooltip": "Klicken, um das Menü zu öffnen"
   },
   "signUp": {
@@ -25,7 +25,7 @@
     "emptyPasswordError": "Passwort darf nicht leer sein",
     "repeatPasswordEmptyError": "Passwortwiederholung darf nicht leer sein",
     "unmatchedPasswordError": "Passwörter stimmen nicht überein",
-    "alreadyHaveAnAccount": "Hast du schon ein Account?",
+    "alreadyHaveAnAccount": "Hast du schon ein Konto?",
     "emailHint": "E-Mail",
     "passwordHint": "Passwort",
     "repeatPasswordHint": "Passwort wiederholen",
@@ -35,7 +35,7 @@
     "loginTitle": "Bei @:appName einloggen",
     "loginButtonText": "Anmelden",
     "loginStartWithAnonymous": "Anonyme Sitzung starten",
-    "continueAnonymousUser": "in anonymer Sitzung fortfahren",
+    "continueAnonymousUser": "Fortfahren mit anonymer Sitzung",
     "buttonText": "Anmelden",
     "signingInText": "Anmelden...",
     "forgotPassword": "Passwort vergessen?",
@@ -46,16 +46,16 @@
     "unmatchedPasswordError": "Passwörter stimmen nicht überein",
     "syncPromptMessage": "Synchronisation kann ein paar Minuten dauern. Diese Seite bitte nicht schließen",
     "or": "ODER",
-    "LogInWithGoogle": "Mit Google-Account anmelden",
-    "LogInWithGithub": "Mit GitHub-Account anmelden",
-    "LogInWithDiscord": "Mit Discord-Account anmelden",
+    "LogInWithGoogle": "Mit Google-Konto anmelden",
+    "LogInWithGithub": "Mit GitHub-Konto anmelden",
+    "LogInWithDiscord": "Mit Discord-Konto anmelden",
     "signInWith": "Anmeldeoptionen:"
   },
   "workspace": {
     "chooseWorkspace": "Workspace wählen",
     "create": "Workspace erstellen",
     "reset": "Workspace zurücksetzen",
-    "resetWorkspacePrompt": "Das Zurücksetzen des Workspace löscht alle enthaltenen Seiten und Daten. Bist du sicher, dass du den Arbeitsbereich zurücksetzen möchstest? ",
+    "resetWorkspacePrompt": "Das Zurücksetzen des Workspace löscht alle enthaltenen Seiten und Daten. Bist du sicher, dass du den Arbeitsbereich zurücksetzen möchtest? ",
     "hint": "Workspace",
     "notFoundError": "Workspace nicht gefunden",
     "failedToLoad": "Etwas ist schief gelaufen! Der Workspace konnte nicht geladen werden. Versuche, alle AppFlowy-Instanzen zu schließen & versuche es erneut.",
@@ -65,9 +65,11 @@
       "exportLogFiles": "Exportiere Log-Dateien",
       "reachOut": "Kontaktiere uns auf Discord"
     },
-    "deleteWorkspaceHintText": "Sicher, dass du dein Workspace löschen möchtest?\nDies kann nicht mehr Rückgängig gemacht werden.",
+    "menuTitle": "Workspaces",
+    "deleteWorkspaceHintText": "Sicher, dass du den Workspace löschen möchtest?\nDies kann nicht mehr rückgängig gemacht werden.",
     "createSuccess": "Workspace erfolgreich erstellt",
     "createFailed": "Der Workspace konnte nicht erstellt werden",
+    "createLimitExceeded": "Du hast das maximal zulässige Workspacelimit für dein Konto erreicht. Wenn du zusätzlichen Workspace benötigst, um deine Arbeit fortzusetzen, fordere diesen bitte auf Github an",
     "deleteSuccess": "Workspace erfolgreich gelöscht",
     "deleteFailed": "Der Workspace konnte nicht gelöscht werden",
     "openSuccess": "Workspace erfolgreich geöffnet",
@@ -75,7 +77,11 @@
     "renameSuccess": "Workspace erfolgreich umbenannt",
     "renameFailed": "Der Workspace konnte nicht umbenannt werden",
     "updateIconSuccess": "Workspace erfolgreich zurückgesetzt",
-    "updateIconFailed": "Der Workspace konnte nicht zurückgesetzt werden"
+    "updateIconFailed": "Der Workspace konnte nicht zurückgesetzt werden",
+    "cannotDeleteTheOnlyWorkspace": "Der einzige Workspace konnt nicht gelöscht werden",
+    "fetchWorkspacesFailed": "Abrufen von Workspaces fehlgeschlagen",
+    "leaveCurrentWorkspace": "Workspace verlassen",
+    "leaveCurrentWorkspacePrompt": "Sicher, dass du den aktuellen Workspace verlassen möchtest?"
   },
   "shareAction": {
     "buttonText": "Teilen",
@@ -118,7 +124,7 @@
   "blankPageTitle": "Leere Seite",
   "newPageText": "Neue Seite",
   "newDocumentText": "Neues Dokument",
-  "newGridText": "Neues Raster",
+  "newGridText": "Neue Tabelle",
   "newCalendarText": "Neuer Kalender",
   "newBoardText": "Neues Board",
   "trash": {
@@ -131,7 +137,7 @@
       "created": "Erstellt"
     },
     "confirmDeleteAll": {
-      "title": "Bist du dir sicher? Das löscht alle Seiten in den Papierkorb.",
+      "title": "Sicher, das du alle Seiten in dem Papierkorb löschen möchtest?",
       "caption": "Diese Aktion kann nicht rückgängig gemacht werden."
     },
     "confirmRestoreAll": {
@@ -140,11 +146,12 @@
     },
     "mobile": {
       "actions": "Papierkorb-Einstellungen",
-      "empty": "Der Papierkorb ist leer.",
-      "emptyDescription": "Es sind keine gelöschten Dateien vorhanden.",
+      "empty": "Der Papierkorb ist leer",
+      "emptyDescription": "Es sind keine gelöschten Dateien vorhanden",
       "isDeleted": "wurde gelöscht",
       "isRestored": "wurde wiederhergestellt"
-    }
+    },
+    "confirmDeleteTitle": "Sicher, dass du diese Seite dauerhaft löschen möchtest?"
   },
   "deletePagePrompt": {
     "text": "Diese Seite befindet sich im Papierkorb",
@@ -166,11 +173,11 @@
   },
   "menuAppHeader": {
     "moreButtonToolTip": "Entfernen, umbenennen und mehr...",
-    "addPageTooltip": "Schnell eine Seite hineinfügen",
+    "addPageTooltip": "Schnell eine Seite hinzufügen",
     "defaultNewPageName": "Unbenannt",
     "renameDialog": "Umbenennen"
   },
-  "noPagesInside": "Keine Unterseiten",
+  "noPagesInside": "Keine Unterseiten vorhanden",
   "toolbar": {
     "undo": "Rückgängig",
     "redo": "Wiederherstellen",
@@ -194,11 +201,11 @@
     "darkMode": "In den dunklen Modus wechseln",
     "openAsPage": "Als Seite öffnen",
     "addNewRow": "Neue Zeile hinzufügen",
-    "openMenu": "Menü öffnen",
+    "openMenu": "Klicken, um Menü zu öffnen",
     "dragRow": "Gedrückt halten, um die Zeile neu anzuordnen",
     "viewDataBase": "Datenbank ansehen",
     "referencePage": "Auf diesen {Name} wird verwiesen",
-    "addBlockBelow": "Einen Block hinzufügen",
+    "addBlockBelow": "Einen Block danach hinzufügen",
     "urlLaunchAccessory": "Im Browser öffnen",
     "urlCopyAccessory": "Webadresse kopieren."
   },
@@ -206,10 +213,16 @@
     "closeSidebar": "Seitenleiste schließen",
     "openSidebar": "Seitenleiste öffnen",
     "personal": "Persönlich",
+    "private": "Privat",
+    "public": "Öffentlich",
     "favorites": "Favoriten",
-    "clickToHidePersonal": "Klicken, um den persönlichen Abschnitt zu verbergen",
+    "clickToHidePrivate": "Klicken, um den privaten Bereich auszublenden\nDie von dir hier erstellten Seiten sind nur für dich sichtbar",
+    "clickToHidePublic": "Klicken, um den öffentlichen Bereich auszublenden\nDie von dir hier erstellten Seiten sind für jedes Mitglied sichtbar",
+    "clickToHidePersonal": "Klicken, um den persönlichen Bereich zu verbergen",
     "clickToHideFavorites": "Klicken, um Favoriten zu verbergen",
     "addAPage": "Seite hinzufügen",
+    "addAPageToPrivate": "Füge eine Seite zum privaten Bereich hinzu",
+    "addAPageToPublic": "Füge eine Seite zum öffentlich Bereich hinzu",
     "recent": "Zuletzt"
   },
   "notifications": {
@@ -238,8 +251,8 @@
     "tryAgain": "Nochmal versuchen",
     "discard": "Verwerfen",
     "replace": "Ersetzen",
-    "insertBelow": "Unten einfügen",
-    "insertAbove": "Oben einfügen",
+    "insertBelow": "Danach einfügen",
+    "insertAbove": "Davor einfügen",
     "upload": "Hochladen",
     "edit": "Bearbeiten",
     "delete": "Löschen",
@@ -250,14 +263,21 @@
     "removeFromFavorites": "Aus den Favoriten entfernen",
     "addToFavorites": "Zu den Favoriten hinzufügen",
     "rename": "Umbenennen",
-    "helpCenter": "Hilfe Center",
+    "helpCenter": "Hilfe-Center",
     "add": "Hinzufügen",
     "yes": "Ja",
     "clear": "Leeren",
     "remove": "Entfernen",
     "dontRemove": "Nicht entfernen",
     "copyLink": "Link kopieren",
-    "align": "zentrieren"
+    "align": "zentrieren",
+    "login": "Anmelden",
+    "logout": "Abmelden",
+    "deleteAccount": "Konto löschen",
+    "back": "Zurück",
+    "signInGoogle": "Anmelden mit Google",
+    "signInGithub": "Anmelden mit Github",
+    "signInDiscord": "Anmelden mit Discord"
   },
   "label": {
     "welcome": "Willkommen!",
@@ -272,9 +292,9 @@
       "failedMsg": "Prüfe, ob der Anmeldevorgang im Browser abgeschlossen wurde."
     },
     "google": {
-      "title": "Google Sign-In",
+      "title": "Google-Anmeldung",
       "instruction1": "Um die Google-Kontakte zu importieren, muss die Anwendung über den Webbrowser autorisiert werden.",
-      "instruction2": "Kopiere den Code in die Zwischenablage, über das Symbol oder indem du den Text auswählst:",
+      "instruction2": "Kopiere den Code in die Zwischenablage, entweder über das Symbol oder indem du den Text auswählst:",
       "instruction3": "Rufe den folgenden Link im Webbrowser auf und gebe den Code ein:",
       "instruction4": "Klicke unten auf die Schaltfläche, wenn die Anmeldung abgeschlossen ist:"
     }
@@ -289,16 +309,16 @@
       "notifications": "Benachrichtigungen",
       "open": "Einstellungen öffnen",
       "logout": "Abmelden",
-      "logoutPrompt": "Wollen sie sich wirklich Abmelden?",
-      "selfEncryptionLogoutPrompt": "Willst du dich wirklich Abmelden? Bitte stelle sicher, dass der Encryption Secret Code kopiert wurde.",
-      "syncSetting": "Sync Einstellung",
-      "cloudSettings": "Cloud Einstellungen",
-      "enableSync": "Sync aktivieren",
+      "logoutPrompt": "Willst du dich wirklich abmelden?",
+      "selfEncryptionLogoutPrompt": "Willst du dich wirklich Abmelden? Bitte stelle sicher, dass der Encryption-Secret-Code kopiert wurde.",
+      "syncSetting": "Sync-Einstellung",
+      "cloudSettings": "Cloud-Einstellungen",
+      "enableSync": "Sync-aktivieren",
       "enableEncrypt": "Daten verschlüsseln",
       "cloudURL": "Basis URL",
       "invalidCloudURLScheme": "Ungültiges Format",
       "cloudServerType": "Cloud Server",
-      "cloudServerTypeTip": "Bitte beachte, dass der aktuelle Benutzer ausgeloggt wird beim wechsel des Cloud-Servers",
+      "cloudServerTypeTip": "Bitte beachte, dass beim Wechsel des Cloud-Servers der aktuelle Benutzer ausgeloggt wird",
       "cloudLocal": "Lokal",
       "cloudSupabase": "Supabase",
       "cloudSupabaseUrl": "Supabase URL",
