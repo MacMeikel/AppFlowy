@@ -451,14 +451,18 @@
           "one": "{} Mitglied",
           "other": "{} Mitglieder"
         },
-        "memberLimitExceeded": "Du hast die maximal zulässige Mitgliederanzahl für dein Konto erreicht. Wenn du zusätzliche Mitglieder benötigst, um deine Arbeit fortzusetzen, fordere diesen bitte auf Github an"
+        "memberLimitExceeded": "Du hast die maximal zulässige Mitgliederanzahl für dein Konto erreicht. Wenn du zusätzliche Mitglieder benötigst, um deine Arbeit fortzusetzen, fordere diesen bitte auf Github an",
+        "failedToAddMember": "Mitglied konnte nicht hinzugefügt werden",
+        "addMemberSuccess": "Mitglied erfolgreich hinzugefügt",
+        "removeMember": "Mitglied entfernt",
+        "areYouSureToRemoveMember": "Sicher, dass du dieses Mitglied entfernen willst?"
       }
     },
     "files": {
       "copy": "Kopieren",
       "defaultLocation": "Dateien und Speicherort",
       "exportData": "Daten exportieren",
-      "doubleTapToCopy": "Zweimal tippen, um den Pfad zu kopieren",
+      "doubleTapToCopy": "Doppelklick, um den Pfad zu kopieren",
       "restoreLocation": "AppFlowy-Standardpfad wiederherstellen",
       "customizeLocation": "Einen anderen Ordner öffnen",
       "restartApp": "Bitte starten Sie die App neu, damit die Änderungen wirksam werden.",
@@ -478,12 +482,12 @@
       "browser": "Durchsuchen",
       "create": "Erstellen",
       "set": "Festlegen",
-      "folderPath": "Pfad zum Speichern des Ordners",
+      "folderPath": "Pfad zum Speichern deines Ordners",
       "locationCannotBeEmpty": "Der Pfad darf nicht leer sein",
       "pathCopiedSnackbar": "Dateispeicherpfad in Zwischenablage kopiert!",
       "changeLocationTooltips": "Datenverzeichnis ändern",
       "change": "Ändern",
-      "openLocationTooltips": "Win anderes Datenverzeichnis öffnen",
+      "openLocationTooltips": "Ein anderes Datenverzeichnis öffnen",
       "openCurrentDataFolder": "Aktuelles Datenverzeichnis öffnen",
       "recoverLocationTooltips": "Zurücksetzen auf das Standarddatenverzeichnis von AppFlowy",
       "exportFileSuccess": "Datei erfolgreich exportiert!",
@@ -500,8 +504,8 @@
       "tooltipSelectIcon": "Symbol auswählen",
       "selectAnIcon": "Ein Symbol auswählen",
       "pleaseInputYourOpenAIKey": "Bitte gebe den OpenAI-Schlüssel ein",
-      "pleaseInputYourStabilityAIKey": "Bitte gebe den Stability AI Schlüssel ein",
-      "clickToLogout": "Klicken, um den aktuellen Nutzer auszulogen"
+      "pleaseInputYourStabilityAIKey": "Bitte gebe den Stability AI-Schlüssel ein",
+      "clickToLogout": "Klicken, um den aktuellen Nutzer auszuloggen"
     },
     "shortcuts": {
       "shortcutsLabel": "Tastenkürzel",
@@ -509,10 +513,10 @@
       "keyBinding": "Tastenkombination",
       "addNewCommand": "Neuen Befehl hinzufügen",
       "updateShortcutStep": "Die gewünschte Tastenkombination drücken und mit ENTER bestätigen",
-      "shortcutIsAlreadyUsed": "Diese Verknüpfung wird bereits verwendet für: {conflict}",
-      "resetToDefault": "Zurücksetzen",
-      "couldNotLoadErrorMsg": "Tastenkürzel konnten nicht geladen werden. Bitte nochmal versuchen.",
-      "couldNotSaveErrorMsg": "Tastenkürzel konnten nicht gespeichert werden. Bitte nochmal versuchen."
+      "shortcutIsAlreadyUsed": "Dieses Tastenkürzel wird bereits verwendet für: {conflict}",
+      "resetToDefault": "Zurücksetzen der Tastenkürzel",
+      "couldNotLoadErrorMsg": "Tastenkürzel konnten nicht geladen werden. Bitte noch einmal versuchen.",
+      "couldNotSaveErrorMsg": "Tastenkürzel konnten nicht gespeichert werden. Bitte noch einmal versuchen."
     },
     "mobile": {
       "personalInfo": "Persönliche Informationen",
