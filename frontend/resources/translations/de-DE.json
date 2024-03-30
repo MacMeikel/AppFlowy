@@ -443,9 +443,15 @@
         "member": "Mitglied",
         "memberHintText": "Ein Mitglied kann Seiten lesen, kommentieren und bearbeiten, sowie Einladungen an Mitglieder & Gäste versenden.",
         "guestHintText": "Ein Gast kann mit Erlaubnis bestimmte Seiten lesen, reagieren, kommentieren und bearbeiten.",
-        "emailInvalidError": "Ungültige E-Mail. Bitte prüfe die E-Mail und versuche es erneut.",
-        "emailSent": "E-Mail gesendet. Prüfe den Posteingang.",
-        "members": "Mitglieder"
+        "emailInvalidError": "Ungültige E-Mailadresse! Bitte prüfe die E-Mailadresse und versuche es erneut.",
+        "emailSent": "E-Mail gesendet, prüfe den Posteingang.",
+        "members": "Mitglieder",
+        "membersCount": {
+          "zero": "{} Mitglieder",
+          "one": "{} Mitglied",
+          "other": "{} Mitglieder"
+        },
+        "memberLimitExceeded": "Du hast die maximal zulässige Mitgliederanzahl für dein Konto erreicht. Wenn du zusätzliche Mitglieder benötigst, um deine Arbeit fortzusetzen, fordere diesen bitte auf Github an"
       }
     },
     "files": {
