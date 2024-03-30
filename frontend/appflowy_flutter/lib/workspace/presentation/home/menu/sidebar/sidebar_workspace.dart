@@ -112,6 +112,7 @@ class SidebarWorkspace extends StatelessWidget {
         break;
       case UserWorkspaceActionType.none:
       case UserWorkspaceActionType.fetchWorkspaces:
+      case UserWorkspaceActionType.leave:
         message = null;
         break;
     }
@@ -181,7 +182,7 @@ class _SidebarSwitchWorkspaceButtonState
                 enableEdit: false,
               ),
             ),
-            const HSpace(4),
+            const HSpace(6),
             Expanded(
               child: FlowyText.medium(
                 widget.currentWorkspace.name,

@@ -1,5 +1,8 @@
+import 'package:appflowy/core/config/kv.dart';
+import 'package:appflowy/core/config/kv_keys.dart';
 import 'package:appflowy/generated/locale_keys.g.dart';
 import 'package:appflowy/shared/feature_flags.dart';
+import 'package:appflowy/startup/startup.dart';
 import 'package:appflowy/user/application/user_service.dart';
 import 'package:appflowy_backend/log.dart';
 import 'package:appflowy_backend/protobuf/flowy-error/code.pbenum.dart';
@@ -135,6 +138,12 @@ class UserWorkspaceBloc extends Bloc<UserWorkspaceEvent, UserWorkspaceState> {
               ),
               (e) => state.currentWorkspace,
             );
+            result.onSuccess((_) async {
+              await getIt<KeyValueStorage>().set(
+                KVKeys.lastOpenedWorkspaceId,
+                workspaceId,
+              );
+            });
             emit(
               state.copyWith(
                 currentWorkspace: currentWorkspace,
@@ -209,6 +218,30 @@ class UserWorkspaceBloc extends Bloc<UserWorkspaceEvent, UserWorkspaceState> {
               ),
             );
           },
+          leaveWorkspace: (workspaceId) async {
+            final result = await _userService.leaveWorkspace(workspaceId);
+            final workspaces = result.fold(
+              (s) => state.workspaces
+                  .where((e) => e.workspaceId != workspaceId)
+                  .toList(),
+              (e) => state.workspaces,
+            );
+            result.onSuccess((_) {
+              // if leaving the current workspace, open the first workspace
+              if (state.currentWorkspace?.workspaceId == workspaceId) {
+                add(OpenWorkspace(workspaces.first.workspaceId));
+              }
+            });
+            emit(
+              state.copyWith(
+                workspaces: workspaces,
+                actionResult: UserWorkspaceActionResult(
+                  actionType: UserWorkspaceActionType.leave,
+                  result: result,
+                ),
+              ),
+            );
+          },
         );
       },
     );
@@ -220,11 +253,21 @@ class UserWorkspaceBloc extends Bloc<UserWorkspaceEvent, UserWorkspaceState> {
   Future<(UserWorkspacePB currentWorkspace, List<UserWorkspacePB> workspaces)?>
       _fetchWorkspaces() async {
     try {
+      final lastOpenedWorkspaceId = await getIt<KeyValueStorage>().get(
+        KVKeys.lastOpenedWorkspaceId,
+      );
       final currentWorkspace =
           await _userService.getCurrentWorkspace().getOrThrow();
       final workspaces = await _userService.getWorkspaces().getOrThrow();
-      final currentWorkspaceInList =
+      UserWorkspacePB currentWorkspaceInList =
           workspaces.firstWhere((e) => e.workspaceId == currentWorkspace.id);
+      if (lastOpenedWorkspaceId != null) {
+        final lastOpenedWorkspace = workspaces
+            .firstWhereOrNull((e) => e.workspaceId == lastOpenedWorkspaceId);
+        if (lastOpenedWorkspace != null) {
+          currentWorkspaceInList = lastOpenedWorkspace;
+        }
+      }
       return (currentWorkspaceInList, workspaces);
     } catch (e) {
       Log.error('fetch workspace error: $e');
@@ -251,6 +294,8 @@ class UserWorkspaceEvent with _$UserWorkspaceEvent {
     String workspaceId,
     String icon,
   ) = _UpdateWorkspaceIcon;
+  const factory UserWorkspaceEvent.leaveWorkspace(String workspaceId) =
+      LeaveWorkspace;
 }
 
 enum UserWorkspaceActionType {
@@ -260,7 +305,8 @@ enum UserWorkspaceActionType {
   open,
   rename,
   updateIcon,
-  fetchWorkspaces;
+  fetchWorkspaces,
+  leave;
 }
 
 class UserWorkspaceActionResult {
